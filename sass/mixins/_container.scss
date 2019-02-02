@@ -1,0 +1,38 @@
+@include media() {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include media( $bp-xs... ) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@include media( $bp-sm... ) {
+    .container {
+        width: 540px;
+    }
+}
+
+@include media( $bp-md... ) {
+    .container {
+        width: 720px;
+    }
+}
+
+@include media( $bp-lg... ) {
+    .container {
+        width: 960px;
+    }
+}
+
+@include media( $bp-xl... ) {
+    .container {
+        width: 1140px;
+    }
+}

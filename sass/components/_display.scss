@@ -1,0 +1,25 @@
+body.state-display {
+    color: $color-light-1;
+    overflow-y: hidden;
+}
+
+#display {
+    height: calc( 100vh - 17px );
+    background-color: $color-dark-1;
+    .viewports {
+        height: 100%;
+    }
+    .viewport {
+        height: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        .title {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+        iframe {
+            flex: 1;
+            margin-top: 10px;
+        }
+    }
+}

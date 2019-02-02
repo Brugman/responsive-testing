@@ -1,0 +1,88 @@
+body.state-prepare {
+    @include media( $bp-md-up... ) {
+        display: flex;
+        justify-content: center; // horizontal
+        align-items: center; // vertical
+    }
+}
+
+#prepare {
+    width: 100%;
+    @include media( $bp-md... ) {
+        width: 720px;
+    }
+    @include media( $bp-lg... ) {
+        width: 960px;
+    }
+    @include media( $bp-xl... ) {
+        width: 1140px;
+    }
+    background-color: rgba( $color-light-1, 0.1 );
+    padding: 15px;
+    @include media( $bp-md-up... ) {
+        padding: 20px 30px 30px 30px;
+    }
+    color: $color-light-1;
+    h1 {
+        @include font-header;
+        font-size: 34px;
+    }
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        @include font-header;
+        font-size: 22px;
+    }
+    .presets {
+        display: grid;
+        grid-gap: 15px;
+        @include media( $bp-xs... ) {
+            grid-template-columns: repeat( 1, 1fr );
+        }
+        @include media( $bp-sm-up... ) {
+            grid-template-columns: repeat( 2, 1fr );
+        }
+        @include media( $bp-lg-up... ) {
+            grid-template-columns: repeat( 3, 1fr );
+        }
+    }
+    .preset {
+        a {
+            display: block;
+            height: 100%;
+            padding: 15px;
+            border: 2px dotted $color-light-1;
+            background-color: $color-dark-1;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            &.active {
+                border: 2px solid $color-accent-1;
+            }
+            .name {
+                font-weight: 600;
+            }
+            .viewports {
+                width: 100%;
+                margin-top: 10px;
+                td {
+                    padding: 2px 0;
+                    font-family: 'Source Code Pro', sans-serif;
+                    font-size: 16px;
+                    &:first-child {
+                    }
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .url {
+        width: 100%;
+        padding: 10px 15px;
+        border: 0;
+        background-color: $color-dark-1;
+        font-size: 22px;
+        color: $color-accent-1;
+    }
+}

@@ -1,0 +1,5 @@
+app/config.php
+node_modules
+*.map
+*.sublime-*
+*.zip
