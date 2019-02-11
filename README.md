@@ -4,16 +4,13 @@ Responsive Testing displays your website in adjacent iframes, so you can check m
 
 ## Requirements
 
-Apache
-PHP
+- Apache (any webserver)
+- PHP
 
 ## Installation
 
-```bash
-cp app/config-example.php app/config.php
-```
-
-Map `public_html` to a domain.
+1. Copy `app/config-example.php` to `app/config.php`.
+1. Map `public_html` to a domain.
 
 ## Usage
 
@@ -51,4 +48,4 @@ This is fairly simple tool. It's _done_. There are no features on the roadmap. I
 
 ## License
 
-[MIT](/Brugman/responsive-testing-3/blob/master/LICENSE) &copy; [Tim Brugman](https://timbrugman.com/)
+[MIT](/LICENSE) &copy; [Tim Brugman](https://timbrugman.com/)
