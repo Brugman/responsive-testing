@@ -20,7 +20,7 @@ body.state-prepare {
     background-color: rgba( $color-light-1, 0.1 );
     padding: 15px;
     @include media( $bp-md-up... ) {
-        padding: 20px 30px 30px 30px;
+        padding: 30px;
     }
     color: $color-light-1;
     h1 {
