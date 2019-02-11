@@ -2,6 +2,8 @@
 
 Responsive Testing displays your website in adjacent iframes, so you can check multiple viewports while writing responsive CSS.
 
+![Demo](/demo.gif)
+
 ## Requirements
 
 - Apache (any webserver)
