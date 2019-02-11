@@ -36,7 +36,7 @@
 
 <?php endif; // $presets ?>
 
-        <h2>Enter the URL</h2>
+        <h2>Enter a URL</h2>
 
         <form id="" class="" action="/" method="get" role="form">
 
