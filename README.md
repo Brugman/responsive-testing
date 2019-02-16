@@ -46,7 +46,7 @@ For example:
 
 ## Contributing
 
-This is a fairly simple tool. It's _done_. There are no features on the roadmap. If you can think of anything you'd like to see or change, please open an issue so we can talk about it. Forking it is cool too.
+If there's anything you'd like to see added or changed, please open an issue so we can talk about it. Forking it is cool too.
 
 ## License
 
