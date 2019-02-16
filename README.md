@@ -11,7 +11,6 @@ Responsive Testing displays your website in adjacent iframes, so you can check m
 
 ## Installation
 
-1. Copy `app/config-example.php` to `app/config.php`.
 1. Map `public_html` to a domain.
 
 ## Usage
