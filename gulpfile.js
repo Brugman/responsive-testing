@@ -23,7 +23,7 @@ var dir = {
 /**
  * Packages.
  *
- * Install command: npm i --save-dev gulp gulp-autoprefixer gulp-clean-css gulp-concat gulp-filter gulp-if gulp-livereload gulp-notify gulp-plumber gulp-rename gulp-sass gulp-sass-glob gulp-sourcemaps gulp-uglify gulp-util
+ * Install command: npm i --save-dev gulp gulp-autoprefixer gulp-clean-css gulp-concat gulp-filter gulp-if gulp-livereload gulp-notify gulp-plumber gulp-rename gulp-sass gulp-sass-glob gulp-sourcemaps gulp-uglify minimist
  */
 var gulp         = require( 'gulp' );
 var autoprefixer = require( 'gulp-autoprefixer' );
@@ -39,12 +39,12 @@ var sass         = require( 'gulp-sass' );
 var sassglob     = require( 'gulp-sass-glob' );
 var sourcemaps   = require( 'gulp-sourcemaps' );
 var uglify       = require( 'gulp-uglify' );
-var util         = require( 'gulp-util' );
+var argv         = require( 'minimist' )( process.argv.slice( 2 ) );
 
 /**
  * Environment.
  */
-var env = ( util.env.env ? util.env.env : 'dev' );
+var env = ( argv.env ? argv.env : 'dev' );
 
 /**
  * Config.
