@@ -1,6 +1,6 @@
 <section id="prepare">
 
-        <h1>Responsive Testing 3: Test with a vengeance</h1>
+        <h1>Responsive Testing</h1>
 
         <h2>Choose a preset</h2>
 
