@@ -45,8 +45,8 @@ For example:
 
 ## Contributing
 
-If there's anything you'd like to see added or changed, please open an issue so we can talk about it. Forking it is cool too.
+If there's anything you'd like to see added or changed, please open an issue so we can talk about it. Forking is cool too.
 
 ## License
 
-[MIT](/LICENSE) &copy; [Tim Brugman](https://timbrugman.com/)
+[MIT](/LICENSE) &copy; [Tim Brugman](https://timbr.dev/)
