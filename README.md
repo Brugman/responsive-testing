@@ -1,17 +1,8 @@
 # Responsive Testing
 
-Responsive Testing displays your website in adjacent iframes, so you can check multiple viewports while writing responsive CSS.
+> Responsive Testing displays your website in adjacent iframes, so you can check multiple viewports while writing responsive CSS.
 
-![Demo](/demo.gif)
-
-## Requirements
-
-- Apache (any webserver)
-- PHP
-
-## Installation
-
-1. Map `public_html` to a domain.
+![demo](/demo.gif)
 
 ## Usage
 
@@ -22,7 +13,16 @@ Responsive Testing displays your website in adjacent iframes, so you can check m
 
 Work on your website with Browsersync/LiveReload/Live.js, and watch the viewports.
 
-## Configuration
+## Requirements
+
+- Apache (any webserver)
+- PHP
+
+## Installation
+
+1. Map `public_html` to a (sub)domain.
+
+## Optional configuration
 
 `app/config.php` contains an array with your viewport presets. This file will not overwritten by updates.
 
@@ -32,7 +32,7 @@ The chosen preset and URL are stored in, and loaded from, the query string. This
 
 For example:
 ```
-/?preset=bs-4&url=https%3A%2F%2Ftimbrugman.com%2F
+/?preset=bs-4&url=https%3A%2F%2Ftimbr.dev%2F
 ```
 
 You can also remove either of these parameters to load the config page partially preconfigured.
@@ -40,13 +40,15 @@ You can also remove either of these parameters to load the config page partially
 For example:
 ```
 /?preset=bs-4
-/?url=https%3A%2F%2Ftimbrugman.com%2F
+/?url=https%3A%2F%2Ftimbr.dev%2F
 ```
 
 ## Contributing
 
-If there's anything you'd like to see added or changed, please open an issue so we can talk about it. Forking is cool too.
+Found a bug? Anything you would like to ask, add or change? Please open an issue so we can talk about it.
 
-## License
+Pull requests are welcome. Please try to match the current code formatting.
 
-[MIT](/LICENSE) &copy; [Tim Brugman](https://timbr.dev/)
+## Author
+
+[Tim Brugman](https://github.com/Brugman)
