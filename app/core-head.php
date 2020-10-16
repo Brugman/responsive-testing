@@ -12,9 +12,6 @@
     <title>Responsive Testing</title>
 
     <!-- link css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers&subset=latin">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans&subset=latin">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro&subset=latin">
     <link rel="stylesheet" href="/assets/rt.min.css">
 
 </head>
