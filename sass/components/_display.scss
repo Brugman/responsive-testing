@@ -14,7 +14,7 @@ body.state-display {
         display: inline-flex;
         flex-direction: column;
         .title {
-            font-family: 'Open Sans', sans-serif;
+            @include font-viewport-heading;
             font-size: 16px;
         }
         iframe {

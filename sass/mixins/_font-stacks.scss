@@ -1,0 +1,13 @@
+@mixin font-heading {
+    font-family: 'Bangers', sans-serif;
+    font-weight: 400;
+}
+@mixin font-preset-name {
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin font-preset-specs {
+    font-family: 'Source Code Pro', sans-serif;
+}
+@mixin font-viewport-heading {
+    font-family: 'Open Sans', sans-serif;
+}
