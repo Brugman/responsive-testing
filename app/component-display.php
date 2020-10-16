@@ -16,10 +16,11 @@ if ( !$viewports )
 
 // config
 $spacing = 30;
+$scrollbar_width = 17;
 // wrapper width: all columns
 $wrapperwidth = 0;
 foreach ( $viewports as $width => $name )
-    $wrapperwidth += $width;
+    $wrapperwidth += $width + $scrollbar_width;
 // wrapper width: in between columns
 $wrapperwidth += $spacing * ( count( $viewports ) - 1 );
 // wrapper width: padding
@@ -37,7 +38,7 @@ $wrapperwidth += $spacing * 2;
 
 <?php foreach ( $viewports as $width => $name ): ?>
 
-        <li class="viewport" style="width: <?=$width;?>px;">
+        <li class="viewport" style="width: <?=$width + $scrollbar_width;?>px;">
 
             <div class="title"><?=$name;?> (<?=$width;?>px)</div>
 
