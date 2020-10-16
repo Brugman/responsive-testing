@@ -1,6 +1,12 @@
 {
   "name": "responsive-testing",
   "version": "3.0.0",
+  "description": "Style multiple viewports with ease.",
+  "homepage": "https://github.com/Brugman/responsive-testing",
+  "license": "MIT",
+  "author": "Tim Brugman (https://timbr.dev/)",
+  "repository": "github:Brugman/responsive-testing",
+  "private": "true",
   "scripts": {
     "postinstall": "npx gulp --env=prod"
   },
