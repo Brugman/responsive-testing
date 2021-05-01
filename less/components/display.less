@@ -1,11 +1,11 @@
 body.state-display {
-    color: $color-light-1;
+    color: @color-light-1;
     overflow-y: hidden;
 }
 
 #display {
     height: calc( 100vh - 17px );
-    background-color: $color-dark-1;
+    background-color: @color-dark-1;
     .viewports {
         height: 100%;
     }
@@ -14,7 +14,7 @@ body.state-display {
         display: inline-flex;
         flex-direction: column;
         .title {
-            @include font-viewport-heading;
+            .font-viewport-heading;
             font-size: 16px;
         }
         iframe {
