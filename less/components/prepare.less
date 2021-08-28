@@ -7,6 +7,10 @@ body.state-prepare {
 }
 
 #prepare {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
     width: 100%;
     @media @bp-md {
         width: 720px;
@@ -17,21 +21,12 @@ body.state-prepare {
     @media @bp-xl {
         width: 1140px;
     }
-    background-color: rgba( @color-light-1, 0.1 );
     padding: 15px;
-    @media @bp-md-up {
-        padding: 30px;
-    }
     color: @color-light-1;
+
     h1 {
         .font-heading;
         font-size: 34px;
-    }
-    h2 {
-        margin-top: 30px;
-        margin-bottom: 15px;
-        .font-heading;
-        font-size: 22px;
     }
     .presets {
         display: grid;
@@ -52,6 +47,7 @@ body.state-prepare {
             height: 100%;
             padding: 15px;
             border: 2px dotted @color-light-1;
+            border-radius: 10px;
             background-color: @color-dark-1;
             font-size: 18px;
             &.active {
@@ -80,8 +76,17 @@ body.state-prepare {
         width: 100%;
         padding: 10px 15px;
         border: 0;
-        background-color: @color-dark-1;
-        font-size: 22px;
-        color: @color-accent-1;
+        border-radius: 10px;
+        background-color: @color-dark-2;
+        text-transform: uppercase;
+        .font-heading;
+        font-size: 20px;
+        color: @color-light-1;
+        &::placeholder {
+            opacity: 0.2;
+        }
+        &:focus {
+            outline: 0;
+        }
     }
 }

@@ -2,8 +2,6 @@
 
         <h1>Responsive Testing</h1>
 
-        <h2>Choose a preset</h2>
-
 <?php if ( !empty( $presets ) ): ?>
 
         <ul class="presets">
@@ -36,13 +34,11 @@
 
 <?php endif; // $presets ?>
 
-        <h2>Enter a URL</h2>
-
         <form id="" class="" action="/" method="get" role="form">
 
             <input type="hidden" name="preset" class="js-preset" value="">
 
-            <input type="text" name="url" class="url js-url" value="<?=( $_GET['url'] ?? '' );?>" required>
+            <input type="text" name="url" class="url js-url" value="<?=( $_GET['url'] ?? '' );?>" placeholder="Enter a URL" required>
 
         </form>
 
