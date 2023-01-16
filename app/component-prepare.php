@@ -36,7 +36,7 @@
 
         <form id="" class="" action="/" method="get" role="form">
 
-            <input type="hidden" name="preset" class="js-preset" value="">
+            <input type="hidden" name="preset" id="js-preset" value="">
 
             <input type="text" name="url" class="url js-url" value="<?=( $_GET['url'] ?? '' );?>" placeholder="Enter a URL" required>
 

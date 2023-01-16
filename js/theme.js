@@ -1,47 +1,48 @@
-(function($) {
+let preset             = document.getElementById("js-preset");
+let set_preset_buttons = document.querySelectorAll('.js-set-preset');
 
-    /**
-     * Methods.
-     */
+/**
+ * Methods.
+ */
 
-    function set_preset( preset ) {
-        $('.js-preset').val( preset );
-    }
+function set_preset(new_preset) {
+    // abort if we have no new preset or there is no preset element
+    if ( new_preset == null || preset == null )
+        return;
+    // set
+    preset.value = new_preset;
+    // loop over buttons
+    set_preset_buttons.forEach(function(el) {
+        // all neutral
+        el.classList.remove("active");
+        // one active
+        if ( el.dataset.preset == new_preset ) {
+            el.classList.add("active");
+        }
+    });
+}
 
-    function show_preset( preset ) {
-        $('.js-set-preset').removeClass('active');
-        $('.js-set-preset[data-preset='+preset+']').addClass('active');
-    }
+/**
+ * Runtime.
+ */
 
-    /**
-     * Runtime.
-     */
+set_preset( new URLSearchParams( window.location.search ).get('preset') );
 
-    var urlparams = new URLSearchParams( window.location.search );
-    var urlpreset = urlparams.get('preset');
-    if ( urlpreset != null ) {
-        show_preset( urlpreset );
-        set_preset( urlpreset );
-    }
+/**
+ * Events.
+ */
 
-    /**
-     * Triggers.
-     */
-
-    $('.js-set-preset').on( 'click', function ( event ) {
+set_preset_buttons.forEach(function(el) {
+    el.addEventListener('click', function(event) {
         // prevent default
         event.stopPropagation();
         event.preventDefault();
-        // get
-        var preset = $( this ).data('preset');
-        // show
-        show_preset( preset );
         // set
-        set_preset( preset );
+        set_preset( this.dataset.preset );
         // focus
-        $('.js-url').focus();
+        document.querySelector('.js-url').focus();
         // clear url
         window.history.replaceState( {}, document.title, '/' );
     });
+});
 
-})( jQuery );
