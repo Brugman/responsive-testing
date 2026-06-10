@@ -1,3 +1,7 @@
+> [!WARNING]
+> This project is archived and no longer maintained. It will not receive further development or updates.
+> Modern web development has moved away from a preset number of viewports.
+
 # Responsive Testing
 
 > Responsive Testing displays your website in adjacent iframes, so you can check multiple viewports while writing responsive CSS.
